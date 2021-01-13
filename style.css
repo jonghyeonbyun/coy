@@ -91,6 +91,7 @@ header {
   text-align: center;
   transition: 0.5s;
   background: rgba(252, 194, 215, 0.2);
+  backdrop-filter: blur(50px);
   border-radius: 30px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
