@@ -9,10 +9,11 @@
   <body>
     <header>
       <a href="#" class="logo">글적글적</a>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Display</a></li>
-        <li><a href="#">About</a></li>
+      <div class="toggle" onclick="toggleMenu();"></div>
+      <ul class="menu">
+        <li><a href="#" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#" onclick="toggleMenu();">Display</a></li>
+        <li><a href="#" onclick="toggleMenu();">About</a></li>
       </ul>
     </header>
     <section class="banner">
@@ -59,5 +60,13 @@
         </div>
       </div>
     </section>
+    <script type="text/javascript">
+      function toggleMenu() {
+        var menuToggle = document.querySelector(".toggle");
+        var menu = document.querySelector(".menu");
+        menuToggle.classList.toggle("active");
+        menu.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
